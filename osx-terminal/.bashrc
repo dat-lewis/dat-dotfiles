@@ -9,6 +9,7 @@ export GREP_OPTIONS='--color=auto'
 
 # ls color alias
 alias ls='ls -GFh'
+alias start-http='python -m SimpleHTTPServer 8888 &'
 
 # history settings
 export HISTFILESIZE=1000
