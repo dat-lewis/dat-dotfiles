@@ -57,3 +57,6 @@ extract ()
 # setting for the new UTF-8 terminal in os x
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+# source to
+source ~/to.sh
