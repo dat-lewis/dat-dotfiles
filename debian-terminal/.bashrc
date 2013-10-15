@@ -1,15 +1,15 @@
 # debian .bashrc
 
 # terminal settings
-export PS1='\[\033[01;31m\]\u\[\033[01;33m\]@\[\033[01;36m\]\h \[\033[01;33m\]\W \[\033[01;35m\]\$ \[\033[00m\]'
+export PS1='\[\033[01;31m\][\h] \[\033[01;33m\]\W \[\033[01;31m\]\$ \[\033[00m\]'
 
 # color settings
 export CLICOLOR=1
 eval `dircolors .dircolors`
 
 # history settings
-export HISTFILESIZE=1000
-export HISTSIZE=1000
+export HISTFILESIZE=100000
+export HISTSIZE=100000
 export HISTCONTROL="ignoreboth"
 
 # editor settings
@@ -20,6 +20,7 @@ alias ls='ls --color=auto'
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
 alias grep='grep --colour=auto'
+alias glances='glances -e'
 
 # man page color
 export LESS_TERMCAP_mb=$'\E[01;31m'
@@ -56,6 +57,3 @@ extract ()
 # setting for the new UTF-8 terminal in os x
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-
-# source to
-source /root/to.sh
