@@ -2,25 +2,27 @@
 
 # terminal settings
 export PS1='\[\033[01;31m\]\u\[\033[01;33m\]@\[\033[01;36m\]\h \[\033[01;33m\]\W \[\033[01;35m\]\$ \[\033[00m\]'
+unset PROMPT_COMMAND
 
 # color settings
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='1;32'
 
 # ls color alias
 alias ls='ls -GFh'
 alias start-http='python -m SimpleHTTPServer 8888 &'
 
+# ansible settings
+export ANSIBLE_HOSTS=/Users/lewis/ansible/hosts
+
 # history settings
-export HISTFILESIZE=1000
-export HISTSIZE=1000
+export HISTFILESIZE=10000
+export HISTSIZE=10000
 export HISTCONTROL="ignoreboth"
 
 # editor settings
 export EDITOR="vim"
-
-# aliases
-alias triumph='java -jar /Users/LEWIS/Library/stillalive.jar' 
 
 # man page color
 export LESS_TERMCAP_mb=$'\E[01;31m'
@@ -57,6 +59,3 @@ extract ()
 # setting for the new UTF-8 terminal in os x
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-
-# source to
-source ~/to.sh
