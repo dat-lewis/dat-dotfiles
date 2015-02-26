@@ -1,7 +1,7 @@
 # debian .bashrc
 
 # terminal settings
-export PS1='\[\033[01;31m\][\h] \[\033[01;33m\]\W \[\033[01;31m\]\$ \[\033[00m\]'
+export PS1='\[\033[01;36m\][\h] \[\033[01;34m\]\W \[\033[01;36m\]\$ \[\033[00m\]'
 
 # color settings
 export CLICOLOR=1
@@ -14,6 +14,9 @@ export HISTCONTROL="ignoreboth"
 
 # editor settings
 export EDITOR="vim"
+
+# disbale console blanking
+setterm -blank 0
 
 # aliases
 alias ls='ls --color=auto'
